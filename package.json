@@ -1,0 +1,13 @@
+{
+  "name": "firstVedio_prac",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "path-env": "^0.0.12"
+  },
+  "scripts": {
+    "start": "set NODE_ENV=3000 &&nodemon index",
+    "start-dev": "set NODE_ENV=4000 &&nodemon index"   
+  }
+}
