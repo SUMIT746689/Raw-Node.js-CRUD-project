@@ -1,0 +1,22 @@
+{
+  "name": "vedio-3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {},
+  "nodemonConfig": {
+    "ext": "js",
+    "ignore": [
+      "*.test.ts",
+      "db/*"
+    ],
+    "delay": "2"
+  },
+  "scripts": {
+    "start": "set ENV_PORT=3000 &&nodemon index"
+  },
+  "dependencies": {
+    "env-var": "^7.1.1",
+    "nodemon": "^2.0.15"
+  }
+}
