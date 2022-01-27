@@ -31,11 +31,12 @@ handler.reqRes = (req,res)=>{
         }
         const pathHandle = reqPath_Handle[replacePath] ? reqPath_Handle[replacePath]: errorPathHandle; 
         pathHandle(req_all,(statuscode,message)=>{
-            res.writeHead(statuscode,{'Content-type':'text/plain'});
-            res.write(message);
+            res.writeHead(statuscode,{'Content-type':'application/json'});
+            res.write(JSON.stringify(message));
+            res.end();
         });
-//        console.log(reqPath_Handle[replacePath]);
-        res.end();
+//        console.log(reqPath_Handle[replacePath])
+       
 
     });
     
