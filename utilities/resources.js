@@ -1,6 +1,5 @@
 const crypto = require('crypto');
-const {secret_key} = require('../environment')
-console.log(secret_key)
+const {secret_key} = require('../environment');
 const resources = {};
 
 resources.parseJSON=(data)=>{

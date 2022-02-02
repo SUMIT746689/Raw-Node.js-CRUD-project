@@ -19,7 +19,6 @@ handler.reqRes = (req,res)=>{
 
     req.on('data',(buffer)=>{
         bufferData = decoder.write(buffer); 
-//        console.log(bufferData);
     });
 
     req.on('end',()=>{
@@ -35,9 +34,6 @@ handler.reqRes = (req,res)=>{
             res.write(JSON.stringify(message));
             res.end();
         });
-//        console.log(reqPath_Handle[replacePath])
-       
-
     });
     
 }

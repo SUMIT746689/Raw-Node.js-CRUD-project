@@ -1,0 +1,1 @@
+{"phoneNumber":"01776912033","protocol":"Mehedi Hasan ","method":"post","timeOutSeconds":5,"successCodes":[200,300,300],"new_check_key":"ny1781nwzundefinedkaoyqqaito"}

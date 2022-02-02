@@ -61,6 +61,9 @@ crud.update=(file,filename,data,callback,)=>{
                   }
                });
             }
+            else{
+               callback(true);
+            }
          });
       }
    else{
