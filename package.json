@@ -1,13 +1,17 @@
 {
-  "name": "firstVedio_prac",
+
+  "name": "Practice2",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "path-env": "^0.0.12"
+
+    "dotenv": "^14.3.2",
+    "nodemon": "^2.0.1r5"
   },
   "scripts": {
-    "start": "set NODE_ENV=3000 &&nodemon index",
-    "start-dev": "set NODE_ENV=4000 &&nodemon index"   
+    "start": "nodemon index.js",
+    "development":"set NODE_ENV=development&&nodemon index.js",
+    "production":"set NODE_ENV=production&&nodemon index.js"
   }
 }
